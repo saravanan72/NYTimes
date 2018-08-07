@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".details.NewsDetailsActivity">
+    <include
+        layout="@layout/toolbar"/>
+
+    <ImageView
+        android:id="@+id/expandedImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_240"
+        android:src="@drawable/image_rectangle_bg"
+        android:scaleType="fitXY"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_above="@+id/news_details_copy_right_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/news_details_title_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:background="@android:color/darker_gray"
+                    android:text="@string/lorem_ipsum"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/dp_16"
+                    android:textStyle="bold"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:id="@+id/news_details_type_qoutes_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/news_details_title_textview"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/type"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/dp_12"
+                    android:textStyle="normal"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:id="@+id/news_details_poste_type_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/news_details_title_textview"
+                    android:layout_toRightOf="@+id/news_details_type_qoutes_textview"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/article"
+                    android:textColor="#555"
+                    android:textSize="@dimen/dp_12"
+                    android:textStyle="normal"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/news_details_title_textview"
+                    android:layout_toLeftOf="@+id/news_details_posted_date_textview"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/posted_on"
+                    android:textColor="#555"
+                    android:textSize="@dimen/dp_12"
+                    android:textStyle="normal"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:id="@+id/news_details_posted_date_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/news_details_title_textview"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/_07_08_2018"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/dp_12"
+                    android:textStyle="bold"
+                    tools:ignore="SpUsage" />
+
+
+                <TextView
+                    android:id="@+id/news_details_keywords_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/news_details_posted_date_textview"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/lorem_ipsum"
+                    android:textColor="#555"
+                    android:textSize="@dimen/dp_13"
+                    android:textStyle="bold"
+                    tools:ignore="SpUsage" />
+
+
+                <TextView
+                    android:id="@+id/news_details_description_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/news_details_keywords_textview"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/lorem_ipsum"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/dp_12"
+                    android:textStyle="normal"
+                    tools:ignore="SpUsage" />
+
+            </RelativeLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <TextView
+            android:id="@+id/news_details_copy_right_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:padding="@dimen/dp_5"
+            android:text="@string/copy_right"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/dp_12"
+            android:textStyle="normal"
+            tools:ignore="SpUsage" />
+    </RelativeLayout>
+</LinearLayout>

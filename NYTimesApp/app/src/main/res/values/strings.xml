@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NYTimes</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </string>
+    <string name="date">06/08/2018</string>
+    <string name="most_popular">NY Times Most Popular</string>
+    <string name="api_key">2187a6a544394c87b2fc8f72401193e2</string>
+    <string name="base_url">https://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/30.json?</string>
+    <string name="type">Type:</string>
+    <string name="article">Article</string>
+    <string name="posted_on">Posted On:</string>
+    <string name="_07_08_2018">07/08/2018</string>
+    <string name="copy_right">Copyright (c) 2018 The New York Times Company. All Rights Reserved.</string>
+</resources>
